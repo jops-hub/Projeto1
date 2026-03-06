@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SEEDF — FAQ</title>
+
+<style>
+    :root{
+        --azul-topo:#005EB8;
+        --azul-menu:#0B3A67;
+        --azul-link:#005EB8;
+        --cinza-borda:#e5e7eb;
+        --fundo:#ffffff;
+        --texto:#111827;
+    }
+
+    body{
+        margin:0; font-family:Arial, Helvetica, sans-serif;
+        color:var(--texto); background:var(--fundo);
+    }
+
+    /* TOPO */
+    .topo{
+        background:var(--azul-topo);
+        padding:10px 16px;
+        display:flex; justify-content:space-between; align-items:center;
+    }
+    .topo img{ height:40px; }
+    .titulo-topo{
+        color:#fff; font-weight:bold; font-size:20px; margin-left:8px;
+    }
+    .redes a img{ height:28px; margin-left:6px; }
+
+    /* MENU */
+    .menu{
+        background:var(--azul-menu);
+        padding:8px 10px;
+        display:flex; gap:20px; flex-wrap:wrap;
+    }
+    .menu a{
+        color:#fff; text-decoration:none; font-size:14px;
+    }
+    .menu a:hover{ text-decoration:underline; }
+
+    /* CONTEÚDO */
+    .container{
+        max-width:900px; margin:30px auto; padding:0 16px;
+    }
+    h1{ text-align:center; margin-bottom:20px; }
+
+    /* FAQ estilo accordion */
+    .faq-item{
+        border:1px solid var(--cinza-borda);
+        border-radius:8px;
+        margin-bottom:12px;
+        overflow:hidden;
+    }
+    .faq-pergunta{
+        background:#f3f4f6;
+        padding:14px;
+        cursor:pointer;
+        font-weight:bold;
+    }
+    .faq-resposta{
+        padding:14px;
+        display:none;
+        background:#fff;
+    }
+
+    /* RODAPÉ */
+    footer{
+        margin-top:40px;
+        padding:18px;
+        text-align:center;
+        border-top:1px solid var(--cinza-borda);
+        font-size:13px;
+    }
+    footer a{
+        color:var(--azul-link);
+        text-decoration:none;
+        margin:0 6px;
+    }
+</style>
+
+<script>
+function toggleFAQ(id){
+    var box = document.getElementById(id);
+    box.style.display = box.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- TOPO -->
+<div class="topo">
+    <div style="display:flex; align-items:center;">
+        LOGO_GDF.png
+        <span class="titulo-topo">SECRETARIA DE EDUCAÇÃO/DF — SEEDF</span>
+    </div>
+    <div class="redes">
+        <a>#"><img src="ico_fb.png" alt=""></a>
+        <a>#"><img src="ico_x.png" alt=""></a>
+        <a>#"><img src="ico_yt.png" alt=""></a>
+        <a>#"><img src="ico_ig.png" alt=""></a>
+        <a>#"><img src="ico_tt.png" alt=""></a>
+    </div>
+</div>
+
+<!-- MENU -->
+<nav class="menu">
+    Quem pode participar</a>
+    Como se inscrever</a>
+    Vagas disponíveis</a>
+    Área para empresas</a>
+    <strong>FAQ</strong></a>
+    Contato</a>
+</nav>
+
+<!-- CONTEÚDO FAQ -->
+<div class="container">
+    <h1>Perguntas Frequentes</h1>
+
+    <!-- Pergunta 1 -->
+    <div class="faq-item">
+        <div class="faq-pergunta" onclick="toggleFAQ('r1')">
+            Quem pode participar do programa?
+        </div>
+        <div class="faq-resposta" id="r1">
+            Estudantes de ensino médio, estudantes de graduação e jovens aprendizes a partir de 14 anos.
+        </div>
+    </div>
+
+    <!-- Pergunta 2 -->
+    <div class="faq-item">
+        <div class="faq-pergunta" onclick="toggleFAQ('r2')">
+            Como faço minha inscrição?
+        </div>
+        <div class="faq-resposta" id="r2">
+            A inscrição é realizada exclusivamente pelo site oficial, no menu “Como se inscrever”.
+        </div>
+    </div>
+
+    <!-- Pergunta 3 -->
+    <div class="faq-item">
+        <div class="faq-pergunta" onclick="toggleFAQ('r3')">
+            Quais documentos são necessários?
+        </div>
+        <div class="faq-resposta" id="r3">
+            Documento de identidade, CPF, comprovante de residência e comprovante de matrícula, conforme modalidade escolhida.
+        </div>
+    </div>
+
+    <!-- Pergunta 4 -->
+    <div class="faq-item">
+        <div class="faq-pergunta" onclick="toggleFAQ('r4')">
+            Tenho problemas de acesso ao sistema. O que devo fazer?
+        </div>
+        <div class="faq-resposta" id="r4">
+            Entre em contato com o Setor de Inscrição pelos telefones:<br>
+            <strong>(61) 3318‑2424</strong> e <strong>(61) 3318‑2425</strong>.
+        </div>
+    </div>
+
+    <!-- Pergunta 5 -->
+    <div class="faq-item">
+        <div class="faq-pergunta" onclick="toggleFAQ('r5')">
+            Sou empresa. Como posso participar?
+        </div>
+        <div class="faq-resposta" id="r5">
+            Acesse o menu “Área para empresas” para ver requisitos e cadastro.
+        </div>
+    </div>
+
+</div>
+
+<!-- RODAPÉ -->
+<footer>
+    Links Institucionais:
+    Transparência</a> |
+    Ouvidoria</a> |
+    Acesso à Informação</a> |
+    Dados Abertos</a> |
+    LGPD</a>
+
+    <p>© 2026 Secretaria de Educação do Distrito Federal</p>
+    <p>Contato geral: atendimento@seec.df.gov.br</p>
+</footer>
+
+</body>
+</html>
