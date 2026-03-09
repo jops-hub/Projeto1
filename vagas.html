@@ -4,7 +4,43 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SEEDF — Vagas disponíveis</title>
-
+<link rel="stylesheet" href="styles.css">
+<body>
+  <!--Barra superior-->
+    <div class="top-bar"></div>
+<!-- Cabeçalho principal -->
+<header>
+  <div class="logo">
+    <title>images</title>
+    <img src="imagem/logo-gdf.png" alt=""> 
+    <class="title">
+        <h1>SECRETARIA DE EDUCAÇÃO/DF</h1>
+        <p>SEE/DF</p>
+    </div>
+    <div class="logo">
+        <a href="https://www.facebook.com/educadf/" target="_blank"><img src="imagem/logo-facebook.png" alt="Facebook">
+        <a href="https://x.com/educadf" target="_blank"><img src="imagem/logo-X.png" alt="X">
+        <a href="https://www.youtube.com/channel/UCbtXh3i-jkJ6vi-5nkzqukw" target="_blank"><img src="imagem/logo-youtube.png" alt="YouTube">
+        <a href="https://www.instagram.com/educadf/" target="_blank"><img src="imagem/logo-instagram.png" alt="Instagram">
+        <a href="https://www.tiktok.com/@educadf" target="_blank"><img src="imagem/logo-toktok.png" alt="TikTok">
+        <a href="https://www.flickr.com/photos/199955563@N07/albums/" target="_blank"><img src="imagem/logo-flickr.png" alt="Flickr"></a>
+    </div>
+    <div class="search">
+        <input type="text" placeholder="Digite aqui o que está procurando">
+        <button>Buscar</button>
+    </div>
+</header>
+<!--Menu principal-->
+<nav class="main-menu">
+    <ul>
+        <li><a href="quem-pode-participar.html">Quem pode participar</a></li>
+        <li><a href="como-se-inscrever.html">Como se inscrever</a></li>
+        <li><a href="vagas.html">Vagas disponíveis</a></li>
+        <li><a href="empresas.html">Área para empresas</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contato.html">Contato</a></li>
+    </ul>
+</nav>
 <style>
     :root{
         --azul-topo:#005EB8;
@@ -92,34 +128,6 @@
 </head>
 
 <body>
-
-<!-- TOPO -->
-<header class="topo">
-    <div style="display:flex; align-items:center;">
-        <!-- Troque pela imagem real -->
-        LOGO_GDF.png
-        <span class="titulo-topo">SECRETARIA DE EDUCAÇÃO/DF — SEEDF</span>
-    </div>
-    <div class="logo">
-      <a href="https://www.facebook.com/educadf/" target="_blank"><img src="imagem/logo-facebook.png" alt="Facebook">
-      <a href="https://x.com/educadf" target="_blank"><img src="imagem/logo-X.png" alt="X">
-      <a href="https://www.youtube.com/channel/UCbtXh3i-jkJ6vi-5nkzqukw" target="_blank"><img src="imagem/logo-youtube.png" alt="YouTube">
-      <a href="https://www.instagram.com/educadf/" target="_blank"><img src="imagem/logo-instagram.png" alt="Instagram">
-      <a href="https://www.tiktok.com/@educadf" target="_blank"><img src="imagem/logo-toktok.png" alt="TikTok">
-      <a href="https://www.flickr.com/photos/199955563@N07/albums/" target="_blank"><img src="imagem/logo-flickr.png" alt="Flickr"></a>
-  </div>
-</header>
-
-<!-- MENU -->
-<nav class="menu" aria-label="Menu principal">
-    <a href="quem-pode-participar.html">Quem pode participar</a>
-    <a href="como-se-inscrever.html">Como se inscrever</a>
-    <a href="#"><strong>Vagas disponíveis</strong></a>
-    <a href="area-empresas.html">Área para empresas</a>
-    <a href="faq.html">FAQ</a>
-    <a href="contato.html">Contato</a>
-</nav>
-
 <main class="container">
     <h1>Vagas disponíveis</h1>
     <p style="text-align:center;color:#374151;margin:0 0 14px 0;">
@@ -183,19 +191,6 @@
         </ul>
     </div>
 </main>
-
-<!-- RODAPÉ -->
-<footer>
-    Links Institucionais:
-    <a href="#">Transparência</a> |
-    <a href="#">Ouvidoria</a> |
-    <a href="#">Acesso à Informação</a> |
-    <a href="#">Dados Abertos</a> |
-    <a href="#">LGPD</a>
-    <p style="margin:8px 0 0 0;">© 2026 Secretaria de Educação do Distrito Federal</p>
-    <p style="margin:4px 0 0 0;">Contato geral: atendimento@seec.df.gov.br</p>
-</footer>
-
 <script>
 /* ======== DADOS DE EXEMPLO (remova ao integrar com CSV/planilha) ======== */
 const vagasExemplo = [
@@ -323,5 +318,21 @@ document.getElementById("ordenar").addEventListener("change", e=>{
 // Inicializa
 render();
 </script>
+<!--Rodapé-->
+<footer style="background-color:#f2f2f2; padding:20px; text-align:center; font-size:14px;">
+  <div>
+    <strong>Links Institucionais:</strong><br>
+    <a href="https://www.transparencia.df.gov.br" target="_blank">Transparência</a> |
+    <a href="https://www.ouvidoria.df.gov.br" target="_blank">Ouvidoria</a> |
+    <a href="https://www.acessoainformacao.gov.br" target="_blank">Acesso à Informação</a> |
+    <a href="https://www.portal.df.gov.br" target="_blank">Portal de Governo</a> |
+    <a href="https://www.dadosabertos.df.gov.br" target="_blank">Dados Abertos</a> |
+    <a href="https://www.lgpd.df.gov.br" target="_blank">LGPD</a>
+  </div>
+  <br>
+  <div>
+  <p>&copy; 2026 Jahaziel Obed Pomahuallca Silva</p>
+<p>Contato: atendimento@see.df.gov.br</p>
+</footer>
 </body>
 </html>
