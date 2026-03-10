@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SEE/DF — FAQ</title>
+<link rel="stylesheet" href="styles.css">
+<body>
+  <!--Barra superior-->
+    <div class="top-bar"></div>
+<!-- Cabeçalho principal -->
+<header>
+  <div class="logo">
+    <title>images</title>
+    <img src="imagem/logo-gdf.png" alt=""> 
+    <class="title">
+        <h1>SECRETARIA DE EDUCAÇÃO/DF</h1>
+        <p>SEE/DF</p>
+    </div>
+    <div class="logo">
+        <a href="https://www.facebook.com/educadf/" target="_blank"><img src="imagem/logo-facebook.png" alt="Facebook">
+        <a href="https://x.com/educadf" target="_blank"><img src="imagem/logo-X.png" alt="X">
+        <a href="https://www.youtube.com/channel/UCbtXh3i-jkJ6vi-5nkzqukw" target="_blank"><img src="imagem/logo-youtube.png" alt="YouTube">
+        <a href="https://www.instagram.com/educadf/" target="_blank"><img src="imagem/logo-instagram.png" alt="Instagram">
+        <a href="https://www.tiktok.com/@educadf" target="_blank"><img src="imagem/logo-toktok.png" alt="TikTok">
+        <a href="https://www.flickr.com/photos/199955563@N07/albums/" target="_blank"><img src="imagem/logo-flickr.png" alt="Flickr"></a>
+    </div>
+    <div class="search">
+        <input type="text" placeholder="Digite aqui o que está procurando">
+        <button>Buscar</button>
+    </div>
+</header>
+<!--Menu principal-->
+<nav class="main-menu">
+    <ul>
+        <li><a href="quem-pode-participar.html">Quem pode participar</a></li>
+        <li><a href="como-se-inscrever.html">Como se inscrever</a></li>
+        <li><a href="vagas.html">Vagas disponíveis</a></li>
+        <li><a href="empresas.html">Área para empresas</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contato.html">Contato</a></li>
+    </ul>
+</nav>
+<style>
+    :root{
+        --azul-topo:#005EB8;
+        --azul-menu:#0B3A67;
+        --azul-link:#005EB8;
+        --cinza-borda:#e5e7eb;
+        --fundo:#ffffff;
+        --texto:#111827;
+    }
+
+    body{
+        margin:0; font-family:Arial, Helvetica, sans-serif;
+        color:var(--texto); background:var(--fundo);
+    }
+
+    /* TOPO */
+    .topo{
+        background:var(--azul-topo);
+        padding:10px 16px;
+        display:flex; justify-content:space-between; align-items:center;
+    }
+    .topo img{ height:40px; }
+    .titulo-topo{
+        color:#fff; font-weight:bold; font-size:20px; margin-left:8px;
+    }
+    .redes a img{ height:28px; margin-left:6px; }
+
+    /* MENU */
+    .menu{
+        background:var(--azul-menu);
+        padding:8px 10px;
+        display:flex; gap:20px; flex-wrap:wrap;
+    }
+    .menu a{
+        color:#fff; text-decoration:none; font-size:14px;
+    }
+    .menu a:hover{ text-decoration:underline; }
+
+    /* CONTEÚDO */
+    .container{
+        max-width:900px; margin:30px auto; padding:0 16px;
+    }
+    h1{ text-align:center; margin-bottom:20px; }
+
+    /* FAQ estilo accordion */
+    .faq-item{
+        border:1px solid var(--cinza-borda);
+        border-radius:8px;
+        margin-bottom:12px;
+        overflow:hidden;
+    }
+    .faq-pergunta{
+        background:#f3f4f6;
+        padding:14px;
+        cursor:pointer;
+        font-weight:bold;
+    }
+    .faq-resposta{
+        padding:14px;
+        display:none;
+        background:#fff;
+    }
+
+    /* RODAPÉ */
+    footer{
+        margin-top:40px;
+        padding:18px;
+        text-align:center;
+        border-top:1px solid var(--cinza-borda);
+        font-size:13px;
+    }
+    footer a{
+        color:var(--azul-link);
+        text-decoration:none;
+        margin:0 6px;
+    }
+</style>
+
+<script>
+function toggleFAQ(id){
+    var box = document.getElementById(id);
+    box.style.display = box.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- CONTEÚDO FAQ -->
+<div class="container">
+    <h1>Perguntas Frequentes</h1>
+
+    <!-- Pergunta 1 -->
+    <div class="faq-item">
+        <div class="faq-pergunta" onclick="toggleFAQ('r1')">
+            Quem pode participar do programa?
+        </div>
+        <div class="faq-resposta" id="r1">
+            Estudantes de ensino médio, estudantes de graduação e jovens aprendizes a partir de 14 anos.
+        </div>
+    </div>
+
+    <!-- Pergunta 2 -->
+    <div class="faq-item">
+        <div class="faq-pergunta" onclick="toggleFAQ('r2')">
+            Como faço minha inscrição?
+        </div>
+        <div class="faq-resposta" id="r2">
+            A inscrição é realizada exclusivamente pelo site oficial, no menu “Como se inscrever”.
+        </div>
+    </div>
+
+    <!-- Pergunta 3 -->
+    <div class="faq-item">
+        <div class="faq-pergunta" onclick="toggleFAQ('r3')">
+            Quais documentos são necessários?
+        </div>
+        <div class="faq-resposta" id="r3">
+            Documento de identidade, CPF, comprovante de residência e comprovante de matrícula, conforme modalidade escolhida.
+        </div>
+    </div>
+
+    <!-- Pergunta 4 -->
+    <div class="faq-item">
+        <div class="faq-pergunta" onclick="toggleFAQ('r4')">
+            Tenho problemas de acesso ao sistema. O que devo fazer?
+        </div>
+        <div class="faq-resposta" id="r4">
+            Entre em contato com o Setor de Inscrição pelos telefones:<br>
+            <strong>(61) 3318‑2424</strong> e <strong>(61) 3318‑2425</strong>.
+        </div>
+    </div>
+
+    <!-- Pergunta 5 -->
+    <div class="faq-item">
+        <div class="faq-pergunta" onclick="toggleFAQ('r5')">
+            Sou empresa. Como posso participar?
+        </div>
+        <div class="faq-resposta" id="r5">
+            Acesse o menu “Área para empresas” para ver requisitos e cadastro.
+        </div>
+    </div>
+
+</div>
+
+<!-- RODAPÉ -->
+<footerstyle="background-color:#f2f2f2; padding:20px; text-align:center; font-size:14px;">
+        <div>
+          <strong>Links Institucionais:</strong><br>
+          <a href="https://www.transparencia.df.gov.br" target="_blank">Transparência</a> |
+          <a href="https://www.ouvidoria.df.gov.br" target="_blank">Ouvidoria</a> |
+          <a href="https://www.acessoainformacao.gov.br" target="_blank">Acesso à Informação</a> |
+          <a href="https://www.portal.df.gov.br" target="_blank">Portal de Governo</a> |
+          <a href="https://www.dadosabertos.df.gov.br" target="_blank">Dados Abertos</a> |
+          <a href="https://www.lgpd.df.gov.br" target="_blank">LGPD</a>
+        </div>
+        <br>
+        <div>
+        <p>&copy; 2026 Jahaziel Obed Pomahuallca Silva</p>
+    <p>Contato: atendimento@see.df.gov.br</p>
+</footer>
+</body>
+</html>
